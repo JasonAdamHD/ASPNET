@@ -1,0 +1,78 @@
+header {
+    padding: 1.1em;
+    background: #003767;
+}
+
+div#headerText {
+    color:white;
+    font-size: 1.3rem;
+    padding: 0.5em 0 0 0.6em;
+}
+
+body {
+    background: lightgray;
+}
+
+nav#mainMenu ul {
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav#mainMenu li {
+    background: #ffd24f;
+    float: left;
+    width: 25%;
+}
+
+nav#mainMenu li a {
+    text-decoration: none;
+    box-sizing: border-box;
+    display: block;
+    padding: 0.5rem;
+}
+
+main {
+    background: white;
+    padding: 0 0.7em 0.7em 0.7em;
+}
+
+nav#sideMenu {
+    float: left;
+}
+
+nav#sideMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#products {
+    float: right;
+    width: 70%;
+}
+
+section#products ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+section#products li {
+    box-sizing: border-box;
+    border: 1px solid black;
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.container {
+    width: 970px;
+    margin: 0 auto;
+}
