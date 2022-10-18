@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <img src="CSET_OWL.jpg" alt="CSET Owl logo">
+        <h1>Assignment 1</h1>
+    </div>
+    <nav>
+        <a href="https://www.oit.edu/">Oregon Tech</a>
+        <a href="https://www.oit.edu/academics/engineering-technology-management/cset">CSET</a>
+    </nav>
+    <main class="main">
+        <h2>About You</h2>
+        <form class="grid" action="https://otapp-cstwebdev.azurewebsites.net/" method="post">
+            <label class="studentID" for="StudentID">Student ID</label>
+            <input type="text" name="StudentID" class="studentID" placeholder="918..." maxlength="9">
+            
+            <label class="name" for="Name">Name</label>
+            <input type="text" name="Name" class="name">
+            
+            <label class="emailAddress" for="EmailAddress">Email Address</label>
+            <input type="email" name="EmailAddress" class="emailAddress">
+            
+            <label class="hobby" for="Hobby">Hobby</label>
+            <input type="text" name="Hobby" class="hobby">
+            
+            <label class="userType" for="UserType">User Type</label>
+            <select name="UserType" class="userType">
+                <option value="Student">Student</option>
+                <option value="Professor">Professor</option>
+            </select>
+
+            <label class="band" for="Band">Band</label>
+            <input type="text" name="Band" class="band">
+
+            <label class="biography" for="Biography">Biography</label>
+            <textarea name="Biography" class="biography"></textarea>
+
+            <label class="coursePrefix" for="CoursePrefix">Course Prefix</label>
+            <input type="text" name="CoursePrefix" class="coursePrefix" maxlength="4">
+
+            <label class="courseNumber" for="CourseNumber">Course Number</label>
+            <input type="text" name="CourseNumber" class="courseNumber" maxlength="3">
+
+            <label class="courseDescription" for="CourseDescription">Course Description</label>
+            <input type="text" name="CourseDescription" class="courseDescription">
+
+            <input type="text" name="Nickname" class="nickname" hidden>
+
+            <input type="submit" class="submit">
+        </form>
+    </main>
+    <footer>
+        &copy CSET, All Rights Reserved
+    </footer>
+</body>

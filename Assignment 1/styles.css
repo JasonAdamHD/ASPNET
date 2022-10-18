@@ -1,0 +1,180 @@
+body{
+    min-width: 800px;
+    margin: 15px;
+    background-color: #003767;
+}
+
+div.heading{
+    display: in;
+    background-color: #ffd24f;
+    height: 140px;
+}
+
+div.heading img {
+    float: left;
+}
+
+div.heading h1{
+    margin: auto;
+    padding: 3rem 0 0 17.5rem;
+    font-size: 3rem;
+}
+
+nav {
+    padding: 15px;
+    margin-bottom: -20px;
+    background-color: #cdcdcd;
+    display: flex;
+    align-items: stretch;
+}
+
+nav a {
+    font-size: 1.4em;
+    padding-left: 5%;
+    padding-right: 8%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main.main {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+main.main h2 {
+    font-size: 2rem;
+}
+
+form.grid {
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, auto);
+}
+
+form input, form textarea, form select{
+    font-size: 0.9em;
+    margin-bottom: 17px;
+}
+
+
+form label.studentID{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+form input.studentID{
+    grid-column: 1;
+    grid-row: 2;
+    width: 40%;
+}
+
+form label.name{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+form input.name{
+    grid-column: 3;
+    grid-row: 2;
+    width: 110%;
+}
+
+form label.emailAddress{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+form input.emailAddress{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+form label.hobby{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+form input.hobby{
+    grid-column: 3;
+    grid-row: 4;
+    width: 110%;
+}
+
+form label.userType{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+form select.userType{
+    grid-column: 1;
+    grid-row: 6;
+    width: 60%;
+}
+
+form label.band{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+form input.band{
+    grid-column: 3;
+    grid-row: 6;
+    width: 110%;
+}
+
+form label.biography{
+    grid-column: 1;
+    grid-row: 7;
+}
+
+form textarea.biography{
+    grid-column: 1/-1;
+    grid-row: 8;
+}
+
+form label.coursePrefix{
+    grid-column: 1;
+    grid-row: 9;
+}
+
+form input.coursePrefix{
+    grid-column: 1;
+    grid-row: 10;
+    width: 28%;
+}
+
+form label.courseNumber{
+    grid-column: 2;
+    grid-row: 9;
+}
+
+form input.courseNumber{
+    grid-column: 2;
+    grid-row: 10;
+    width: 28%;
+}
+
+form label.courseDescription{
+    grid-column: 3;
+    grid-row: 9;
+}
+
+form input.courseDescription{
+    grid-column: 3;
+    grid-row: 10;
+    width: 135%;
+}
+
+form input.submit{
+    grid-column: 1;
+    grid-row: 11;
+    width: 32%;
+    margin: 0;
+}
+
+footer {
+    color: white;
+}
