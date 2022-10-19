@@ -3,6 +3,11 @@ using Lab3.Objects;
 using Lab3.Web.Extensions;
 public class HomeController : Controller
 {
+    public ActionResult Index()
+    {
+        return View();
+    }
+
     public ActionResult Laborers()
     {
         ChoreWorkforce myWorkforce = new ChoreWorkforce();
