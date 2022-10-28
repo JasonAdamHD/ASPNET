@@ -1,0 +1,51 @@
+@model Validation.RegistrationFormModel
+
+<h1>Registration</h1>
+<div>
+
+</div>
+@using(Html.BeginForm("Index", "RegistrationForm"))
+{
+    <div class="row">
+        <div class="form-group col-12 col-sm-6">
+            <label asp-for="FirstName" class="control-label">@Model.FirstName</label>
+            <input asp-for="FirstName" class="form-control"/>
+            <span asp-validation-for="FirstName">@Model.FirstName</span>
+        </div>
+        <div class="form-group col-12 col-sm-6">
+            <label asp-for="LastName" class="control-label">@Model.LastName</label>
+            <input asp-for="LastName" class="form-control"/>
+            <span asp-validation-for="LastName">@Model.LastName</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="EmailAddress" class="control-label">@Model.EmailAddress</label>
+        <input asp-for="EmailAddress" class="form-control"/>
+        <span asp-validation-for="EmailAddress">@Model.EmailAddress</span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label">@Model.PhoneNumber</label>
+        <input asp-for="PhoneNumber" class="form-control"/>
+        <span asp-validation-for="PhoneNumber">@Model.PhoneNumber</span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Address" class="control-label">@Model.Address</label>
+        <input asp-for="Address" class="form-control"/>
+    </div>
+    <div class="row">
+        <div class="form-group col-12 col-sm-4">
+            <label asp-for="City" class="control-label">@Model.City</label>
+            <input asp-for="City" class="form-control"/>
+        </div>
+        <div class="form-group col-12 col-sm-4">
+            <label asp-for="State" class="control-label">@Model.State</label>
+            <select asp-for="State" asp-items="@(new SelectList(Model.StateList, "Abbreviation", "Name"))" class="form-control"></select>
+        </div>
+        <div class="form-group col-12 col-sm-4">
+            <label asp-for="ZipCode" class="control-label">@Model.ZipCode</label>
+            <input asp-for="ZipCode" class="form-control"/>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
