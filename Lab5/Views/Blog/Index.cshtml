@@ -1,0 +1,12 @@
+﻿@model Lab5.Code.DataModels.BlogPostList
+
+<body>
+    <h1>Blogs</h1>
+    @foreach (var blog in Model.BlogPosts)
+    {
+        <div>
+            <h2>@blog.Title</h2>
+            <p>@blog.Author, @blog.Content, @blog.Timestamp <a asp-action="Edit" asp-controller="Blog" asp-route-id="@(blog.ID)">Edit Post</a></p>
+        </div>
+    }
+</body>

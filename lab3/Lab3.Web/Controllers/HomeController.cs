@@ -21,7 +21,7 @@ public class HomeController : Controller
         }
 
         ChoreWorkforce youngWorkforce = new ChoreWorkforce();
-        foreach (var laborer in myWorkforce.Laborers.Where(l => ((l?.Age?? -1) > 3 && l.Age < 10)))
+        foreach (var laborer in myWorkforce.Laborers.Where(l => ((l?.Age?? -1) > 3 && l?.Age < 10)))
         {
             youngWorkforce.AddLaborer(laborer.Name, laborer.Age, laborer.Difficulty);
         }
