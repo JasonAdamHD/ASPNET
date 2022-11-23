@@ -11,9 +11,9 @@ namespace Lab5.Controllers
     {
         private IDataEntityRepository<BlogPost> _dataEntityRepository;
 
-        public BlogController(IConfiguration configuration) 
+        public BlogController(IConfiguration configuration, IDataEntityRepository<BlogPost> dataEntityRepository) 
         {
-            _dataEntityRepository = new BlogDBRepository(configuration);
+            _dataEntityRepository = dataEntityRepository;
         }
 
         public ActionResult Index()

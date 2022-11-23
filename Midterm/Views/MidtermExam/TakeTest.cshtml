@@ -1,0 +1,44 @@
+@using Midterm
+@model List<TestQuestionModel>
+@Html.ValidationSummary()
+@Html.AntiForgeryToken()
+
+@*TODO: Form needs to use tag helpers to post to the "TakeTest" action *@
+<form asp-action="TakeTest" asp-controller="MidtermExam" method="post">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div hidden>
+            <input type="text" asp-for="@Model[i].ID" class="form-control" value="@Model[i].ID" />
+        </div>
+        <h2>@Html.Raw(Model[i].Question)</h2>
+
+        if (Model[i] is TrueFalseQuestionModel)
+        {
+            <select asp-for="@Model[i].Answer" class="form-select">
+                <option value="">--Select--</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+            <span asp-validation-for="@Model[i].Answer"></span>
+        }
+        else if (Model[i] is MultipleChoiceQuestionModel)
+        {
+            foreach (var choice in ((MultipleChoiceQuestionModel)Model[i]).Choices)
+            {
+                <label><input type="radio" name="[@i].Answer" value="@choice"/>@choice</label>
+            }
+            <span asp-validation-for="@Model[i].Answer"></span>
+        }
+        else if (Model[i] is ShortAnswerQuestionModel)
+        {
+            <input maxlength="100" asp-for="@Model[i].Answer" class="form-control"/>
+            <span asp-validation-for="@Model[i].Answer"></span>
+        }
+        else if (Model[i] is LongAnswerQuestionModel)
+        {
+            <textarea asp-for="@Model[i].Answer" class="form-control"></textarea>
+            <span asp-validation-for="@Model[i].Answer"></span>
+        }
+    }
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,304 @@
+{
+  "MidtermExam": {
+    "Questions": [
+      {
+        "ID": 1,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "The current iteration of .NET is platform-independent"
+      },
+      {
+        "ID": 2,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "Browsers must support ASP.NET in order to display pages created with it"
+      },
+      {
+        "ID": 3,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "It is good practice to use inline CSS styles"
+      },
+      {
+        "ID": 4,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "MVC View code beginning with @ is interpreted by the browser"
+      },
+      {
+        "ID": 5,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "HTTP Status Code 200 indicates an error"
+      },
+      {
+        "ID": 6,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "The description meta element is useful for search engine optimization"
+      },
+      {
+        "ID": 7,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "MVC is a design pattern only used by Microsoft ASP.NET technologies"
+      },
+      {
+        "ID": 8,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "It is important that @section definitions be in the correct order within a view"
+      },
+      {
+        "ID": 9,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "A SqlCommand object will automatically close the associated connection when it is done executing"
+      },
+      {
+        "ID": 10,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "The repository design pattern serves to decouple the business logic layer form the specifics how/where data is stored"
+      },
+      {
+        "ID": 11,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "Extension methods only have access to public properties/methods of the objects they operate on"
+      },
+      {
+        "ID": 12,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "Client-side validation makes server-side validation unnecessary"
+      },
+      {
+        "ID": 13,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "The IConfiguration, IOptions and IOptionsSnapshot interfaces all provide ways to access the application confiuguration"
+      },
+      {
+        "ID": 14,
+        "QuestionType": "TrueFalseQuestion",
+        "Question": "The code <strong>@RenderSection(\"Scripts\", true)</strong> will generate an exception in any view that doesn't define a 'Scripts' section"
+      },
+      {
+        "ID": 15,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "List the following in the order of precedence (highest to lowest) for defining CSS styles: internal stylesheet, browser stylesheet, external stylesheet, inline style"
+      },
+      {
+        "ID": 16,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "List the following CSS selector types in order of precedence (highest to lowest): element selector, attribute/class selector, ID selector, inline style"
+      },
+      {
+        "ID": 17,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "Why should you always use parameters for SQL statements instead of directly concatenating values into the string?"
+      },
+      {
+        "ID": 18,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "Data models(business objects) and view models sometimes will have the same set of properties.  How do they differ in purpose"
+      },
+      {
+        "ID": 19,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "Given the following CSS for a div, what are the final height and width of each div box? div{width: 50px; height: 25px; padding: 5px 10px;}"
+      },
+      {
+        "ID": 20,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "Given the following CSS for a div, what are the final height and width of each div box?(Duplicate specification of margin is intentional) div{width: 30px; height: 20px; padding: 5px; margin: 3px 2px 5px 5px; border: solid 1px #000; margin-left: 10px;}"
+      },
+      {
+        "ID": 21,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "Given the following CSS selector, how many ID selectors, class/attribute selectors and element selectors are there (e.g. ID:1,Class/Attribute:2, Element:0)<br />html body main.mainSection div ul#anchorList .item a[data-type=\"statusLink\"]{}"
+      },
+      {
+        "ID": 22,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "What is _ViewStart.cshtml used for?"
+      },
+      {
+        "ID": 23,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "What is _ViewImports.cshtml used for?"
+      },
+      {
+        "ID": 24,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "What HTTP 'method' is used when you type an address into the location bar of your browser and press 'Enter'?"
+      },
+      {
+        "ID": 25,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "The special attributes applied to some elements such as asp-action, asp-controller, and asp-for are referred to as"
+      },
+      {
+        "ID": 26,
+        "QuestionType": "ShortAnswerQuestion",
+        "Question": "In your development environment, what special configuration file should hold anything that should not be checked into a repository such as usernames, passwords and connection strings?"
+      },
+      {
+        "ID": 27,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "What is the purpose of the DOCTYPE declaration at the top of a web page"
+      },
+      {
+        "ID": 28,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "What is the difference between inline and block HTML elements"
+      },
+      {
+        "ID": 29,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "Explain why the alt attribute of the img tag is important"
+      },
+      {
+        "ID": 30,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "Explain how a using(){ } block functions and what types of objects it applies to"
+      },
+      {
+        "ID": 31,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "I often drone on about HTML being a semantic language.  What do I mean, and how does this affect the way HTML should be written"
+      },
+      {
+        "ID": 32,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "A business object can be used as the model as part of the MVC pattern.  Why would we create a model separate from this for use with the view?"
+      },
+      {
+        "ID": 33,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "Name two benefits of using dependency injection"
+      },
+      {
+        "ID": 34,
+        "QuestionType": "LongAnswerQuestion",
+        "Question": "There are two distinct sections of the Program.cs file, the part immediately following <strong>var builder = WebApplication.CreateBuilder(args);</strong> and the part following <strong>var app = builder.Build();</strong>.  Explain what types of registrations happen in each of these sections of the file."
+      },
+      {
+        "ID": 35,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "HTML Stands For",
+        "Choices": [
+          "HoTMaiL",
+          "Highly Transferable Modeling Language",
+          "HyperText Markup Language",
+          "High Traffic Masking Language"
+        ]
+      },
+      {
+        "ID": 36,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "For accessibility, all controls that ask for user input must have an associated:",
+        "Choices": [
+          "label",
+          "validator",
+          "style",
+          "All of the above"
+        ]
+      },
+      {
+        "ID": 37,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Which of the following elements is most appropriate for presenting the user with a list of items in no particular order?",
+        "Choices": [
+          "ol",
+          "ul",
+          "dl",
+          "select"
+        ]
+      },
+      {
+        "ID": 38,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "The living version of a page within the browser is called the",
+        "Choices": [
+          "Output Rendering Model",
+          "ViewModel",
+          "Document Object Model",
+          "Box Model"
+        ]
+      },
+      {
+        "ID": 39,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Given the following HTML, which selector matches and is the most specific for referring to the innermost div?<br />&lt;div&gt;&lt;div id=\"specificBox\" class=\"color\"&gt;&lt;/div&gt;&lt;div&gt;",
+        "Choices": [
+          "div div.color",
+          "div#specificBox",
+          "div.color div#specificBox",
+          "div#specificBox.color"
+        ]
+      },
+      {
+        "ID": 40,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Given the following route definition, and assuming the site only contains one controller named HomeController with no attribute routing, which of the following URLs is invalid?<br />{controller=Home}/{action=Index}/{id?}",
+        "Choices": [
+          "/",
+          "/Home",
+          "/Home/Index",
+          "/Index",
+          "/Home/Index/5",
+          "They are all valid"
+        ]
+      },
+      {
+        "ID": 41,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "In MVC, business logic is intended to be placed in",
+        "Choices": [
+          "The Model",
+          "The View",
+          "The Controller",
+          "All of the above"
+        ]
+      },
+      {
+        "ID": 42,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Which of the following is not a valid HTTP method?",
+        "Choices": [
+          "GET",
+          "PUT",
+          "POST",
+          "UPDATE",
+          "DELETE"
+        ]
+      },
+      {
+        "ID": 43,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Which of the following elements should all pages contain to be valid",
+        "Choices": [
+          "ul",
+          "main",
+          "header",
+          "div",
+          "title"
+        ]
+      },
+      {
+        "ID": 44,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Which of the following view types can accept a model and render output that is at the discretion of the developer?",
+        "Choices": [
+          "View",
+          "Editor Template",
+          "Display Template",
+          "Partial View",
+          "All of the above"
+        ]
+      },
+      {
+        "ID": 45,
+        "QuestionType": "MultipleChoiceQuestion",
+        "Question": "Given the following HTML input, what key/value pair will be sent to the server?<br />&lt;input type=\"text\" id=\"FirstName\" name=\"Name\" value=\"Jordan\" placeholder=\"Richard\" /&gt;",
+        "Choices": [
+          "Name:Jordan",
+          "FirstName:Jordan",
+          "Name:Richard",
+          "FirstName:Richard",
+          "Name:",
+          "FirstName:"
+        ]
+      }
+    ]
+  }
+}

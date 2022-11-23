@@ -8,42 +8,42 @@
 {
     <div class="row">
         <div class="form-group col-12 col-sm-6">
-            <label asp-for="FirstName" class="control-label">@Model.FirstName</label>
+            <label asp-for="FirstName" class="control-label"></label>
             <input asp-for="FirstName" class="form-control"/>
-            <span asp-validation-for="FirstName">@Model.FirstName</span>
+            <span asp-validation-for="FirstName"></span>
         </div>
         <div class="form-group col-12 col-sm-6">
-            <label asp-for="LastName" class="control-label">@Model.LastName</label>
+            <label asp-for="LastName" class="control-label"></label>
             <input asp-for="LastName" class="form-control"/>
-            <span asp-validation-for="LastName">@Model.LastName</span>
+            <span asp-validation-for="LastName"></span>
         </div>
     </div>
     <div class="form-group">
-        <label asp-for="EmailAddress" class="control-label">@Model.EmailAddress</label>
+        <label asp-for="EmailAddress" class="control-label"></label>
         <input asp-for="EmailAddress" class="form-control"/>
-        <span asp-validation-for="EmailAddress">@Model.EmailAddress</span>
+        <span asp-validation-for="EmailAddress"></span>
     </div>
     <div class="form-group">
-        <label asp-for="PhoneNumber" class="control-label">@Model.PhoneNumber</label>
+        <label asp-for="PhoneNumber" class="control-label"></label>
         <input asp-for="PhoneNumber" class="form-control"/>
-        <span asp-validation-for="PhoneNumber">@Model.PhoneNumber</span>
+        <span asp-validation-for="PhoneNumber"></span>
     </div>
     
     <div class="form-group">
-        <label asp-for="Address" class="control-label">@Model.Address</label>
+        <label asp-for="Address" class="control-label"></label>
         <input asp-for="Address" class="form-control"/>
     </div>
     <div class="row">
         <div class="form-group col-12 col-sm-4">
-            <label asp-for="City" class="control-label">@Model.City</label>
+            <label asp-for="City" class="control-label"></label>
             <input asp-for="City" class="form-control"/>
         </div>
         <div class="form-group col-12 col-sm-4">
-            <label asp-for="State" class="control-label">@Model.State</label>
+            <label asp-for="State" class="control-label"></label>
             <select asp-for="State" asp-items="@(new SelectList(Model.StateList, "Abbreviation", "Name"))" class="form-control"></select>
         </div>
         <div class="form-group col-12 col-sm-4">
-            <label asp-for="ZipCode" class="control-label">@Model.ZipCode</label>
+            <label asp-for="ZipCode" class="control-label"></label>
             <input asp-for="ZipCode" class="form-control"/>
         </div>
     </div>

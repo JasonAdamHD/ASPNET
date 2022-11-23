@@ -1,0 +1,10 @@
+@using Midterm
+@model List<TestQuestionModel>
+
+    @foreach(var item in Model)
+    {
+        <div>
+            <h2>@item.Question</h2>
+            <p>@item.Answer</p>
+        </div>
+    }
