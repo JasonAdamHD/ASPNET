@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ImageObject>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row">
+        @foreach (var image in Model)
+        {
+            <div class="col-3">
+                <img src="/image/@image.ID" alt="Image for image with ID: @image.ID" width="100" height="100">
+                <p>@image.Description</p>
+            </div>
+        }
+    </div>
+    
+</div>
