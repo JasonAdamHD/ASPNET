@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 builder.Services.AddTransient<IUSStateRepository, DbUSStateRepository>();
 builder.Services.AddTransient<ICourseRepository, DbCourseRepository>();
 
